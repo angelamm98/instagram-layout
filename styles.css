@@ -1,90 +1,83 @@
 body {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    background-color: rgb(128, 130, 130);
-  }
-.post{
-    margin: auto;
-    border-radius: 10px;
-    background-color: white;
-    width: 500px;
-    height: 550px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background-color: rgb(128, 130, 130);
+  margin: 0;
+  padding: 0;
 }
-.encabezado{
-    width: 100%;
-    height: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around
-}
-span.icon-html {
-    height: 80%;
-    width: 20%;
-    align-self: center;
-    font-size: 1.7em;
-    margin: 4px 4px 0px 8px
- }
- 
- span.text {
-    height: 80%;
-    width: 85%;
-    align-self: flex-start;
-    font-size: 1em;
-    padding: 5px 5px 5px 0px;
- }
- span.punto {
-    margin: 8px 15px 8px 0px;
-    align-self: center;
-    font-size: 1.5em;
 
+/* Contenedor principal del post */
+.post {
+  margin: 40px auto;
+  border-radius: 5px;
+  background-color: white;
+  width: 800px;
+  min-height: 550px;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-img {
-    width: 100%;
-    height: 60%;
 
+/* Encabezado */
+.encabezado {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.iconos{
-    display: flex;
-    align-items: center
-}
-span.heart{
-    height: 80%;
-   width: 4%;
-   align-self: center;
-   font-size: 1.5em;
-   margin: 4px 4px 0px 8px;
-}
-span.comment{
-    height: 80%;
-   width: 4%;
-   align-self: center;
-   font-size: 1.5em;
-   margin: 4px 4px 0px 8px;
-}
-span.paperplain{
-    height: 80%;
-   width: 4%;
-   align-self: center;
-   font-size: 1.5em;
-   margin: 4px 4px 0px 8px;
-}
-span.save {
-    align-self: left;
-    justify-content: flex-end;
-    font-size: 1.5em;
-    margin-left: auto;
-    padding:10px;
 
+.icon-html {
+  font-size: 1.7em;
+  margin-left: 8px;
 }
+
+.text {
+  flex-grow: 1;
+  margin-left: 10px;
+  font-size: 1em;
+}
+
+.punto {
+  font-size: 1.5em;
+  margin-right: 15px;
+}
+
+/* Imagen principal */
+.post img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Iconos debajo de la imagen */
+.iconos {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 12px;
+}
+
+.iconos span {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.iconos .save {
+  margin-left: auto;
+}
+
+/* Cuerpo del post */
 .body {
-    width: 100%;
-    height: 30%;
-    padding: 1px;
-    font-size: 1rem;
-    margin-bottom: 150%;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.body p {
+  line-height: 1.5;
+  word-wrap: break-word;
 }
